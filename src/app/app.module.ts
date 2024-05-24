@@ -10,6 +10,13 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatTableModule } from '@angular/material/table';
 import { HomeComponent } from './view/home/home.component';
 import { FormComponent } from './view/form/form.component';
+import { MatButtonModule } from '@angular/material/button';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatInputModule} from '@angular/material/input';
+import {MatCardModule} from '@angular/material/card';
+import {MatChipsModule} from '@angular/material/chips';
+import {MatIconModule} from '@angular/material/icon';
+
 
 
 @NgModule({
@@ -23,7 +30,16 @@ import { FormComponent } from './view/form/form.component';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatButtonModule,
+    FormsModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatCardModule,
+    MatChipsModule,
+    MatTableModule,
+    MatSlideToggleModule,
+    MatIconModule
   ],
   providers: [
     provideClientHydration(),
