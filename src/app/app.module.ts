@@ -16,7 +16,8 @@ import {MatInputModule} from '@angular/material/input';
 import {MatCardModule} from '@angular/material/card';
 import {MatChipsModule} from '@angular/material/chips';
 import {MatIconModule} from '@angular/material/icon';
-
+import { TableWithPaginatorComponent } from './view/table-with-paginator/table-with-paginator.component';
+import {MatPaginator, MatPaginatorModule} from '@angular/material/paginator';
 
 
 @NgModule({
@@ -24,7 +25,8 @@ import {MatIconModule} from '@angular/material/icon';
     AppComponent,
     TableComponent,
     FormComponent,
-    HomeComponent
+    HomeComponent,
+    TableWithPaginatorComponent
   ],
   imports: [
     BrowserModule,
@@ -39,7 +41,10 @@ import {MatIconModule} from '@angular/material/icon';
     MatChipsModule,
     MatTableModule,
     MatSlideToggleModule,
-    MatIconModule
+    MatIconModule,
+    MatPaginatorModule,
+    MatPaginator,
+    
   ],
   providers: [
     provideClientHydration(),
